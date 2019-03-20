@@ -7,3 +7,6 @@ yarn.lock
 
 # OSX files
 .DS_STORE
+
+# build
+/build
