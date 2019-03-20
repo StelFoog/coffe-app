@@ -1,14 +1,25 @@
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createHashHistory } from "history";
 import { applyMiddleware, compose, createStore } from "redux";
+import { persistStore, persistReducer } from "redux-persist";
 import logger from "redux-logger";
+import storage from "redux-persist/lib/storage";
 import rootReducer from "./rootReducer";
 
 export const history = createHashHistory({ hashType: "slash" });
 
+const persistConfig = {
+  key: "root",
+  storage
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 const store = createStore(
-  connectRouter(history)(rootReducer),
+  connectRouter(history)(persistedReducer),
   compose(applyMiddleware(routerMiddleware(history), logger))
 );
 
-export default { store };
+const persistor = persistStore(store);
+
+export default { store, persistor };
