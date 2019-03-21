@@ -1,9 +1,9 @@
 import React from "react";
-import CoffeeIcon from "./coffeeIcon";
+import CoffeeIcon from "./CoffeeIcon";
 
-const CoffeeButton = () => (
+const CoffeeButton = ({ increaseCounter }) => (
   <div>
-    <button className="coffeeButton">
+    <button className="coffeeButton" onClick={increaseCounter}>
       <CoffeeIcon />
     </button>
   </div>

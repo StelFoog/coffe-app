@@ -1,20 +1,16 @@
-import React, { Component } from "react";
-import CoffeeButton from "./features/coffeeButton/coffeeButton";
-import Status from "./features/status/status";
-import TextBox from "./features/textBox/textBox";
+import React from "react";
+import CoffeeButtonContainer from "./features/coffeeButton/CoffeeButtonContainer";
+import Status from "./features/status/Status";
+import TextBox from "./features/textBox/TextBox";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">Settings will go here</header>
-        <TextBox />
-        <CoffeeButton />
-        <Status />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <header className="App-header">Settings will go here</header>
+    <TextBox />
+    <CoffeeButtonContainer />
+    <Status />
+  </div>
+);
 
 export default App;
