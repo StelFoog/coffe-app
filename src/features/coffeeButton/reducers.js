@@ -12,12 +12,12 @@ const coffeeReducer = (state = initialState, action) => {
   switch (type) {
     case INCREASE_COUNTER:
       newState.counter++;
-      return newState;
+      return { ...newState };
     case RESET_COUNTER:
       newState.counter = 0;
-      return newState;
+      return { ...newState };
     default:
-      return newState;
+      return { ...newState };
   }
 };
 
