@@ -32,7 +32,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;

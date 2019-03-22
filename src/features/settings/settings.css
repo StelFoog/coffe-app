@@ -1,0 +1,10 @@
+.settings-image {
+  font-size: 2rem;
+  transition: 0.25s;
+}
+
+.settings-image:hover,
+.settings-image:focus {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
