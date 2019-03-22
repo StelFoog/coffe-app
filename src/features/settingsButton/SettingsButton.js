@@ -1,6 +1,6 @@
 import React from "react";
-import SettingsIcon from "./SettingsIcon";
-import "./settings.css";
+import SettingsIcon from "./SettingsButtonIcon";
+import "./settingsButton.css";
 
 const Settings = () => <SettingsIcon />;
 
