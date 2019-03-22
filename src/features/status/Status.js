@@ -1,4 +1,5 @@
 import React from "react";
+import "./status.css";
 
 const Status = ({ coffeeCounter }) => (
   <div className="status">

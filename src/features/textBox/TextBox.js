@@ -1,4 +1,5 @@
 import React from "react";
+import "./textBox.css";
 
 const TextBox = ({ colour, text }) => (
   <div className="textBox" style={{ backgroundColor: colour }}>
