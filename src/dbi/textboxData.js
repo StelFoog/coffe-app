@@ -4,7 +4,7 @@ const data = {
     texts: ["Good morning!", "Enjoy your coffe!", "Have a good day!"]
   },
   someCoffe: {
-    colour: "#6b4",
+    colour: "#7b5",
     texts: [
       "The plant on which coffe beans are grown originates from tropical and southern Africa and tropical Asia.",
       "The word Latte comes from the Italian word for milk.",
@@ -12,7 +12,7 @@ const data = {
     ]
   },
   muchCoffe: {
-    colour: "#9b7",
+    colour: "#b87",
     texts: [
       "You've had quite alot of coffee today haven't you?",
       "Getting up there...",
@@ -20,7 +20,7 @@ const data = {
     ]
   },
   enoughCoffe: {
-    colour: "#b87",
+    colour: "#c65",
     texts: [
       "That's all you're gonna have today.",
       "No more coffe today right?",
@@ -28,7 +28,7 @@ const data = {
     ]
   },
   timesUp: {
-    colour: "#b87",
+    colour: "#c65",
     texts: [
       "Better not drink that if you wanna have a good nights sleep.",
       "It's getting late, best not to drink another cup."

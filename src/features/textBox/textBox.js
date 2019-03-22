@@ -1,9 +1,9 @@
 import React from "react";
 
-const Status = ({ coffeeCounter }) => (
-  <div className="textBox">
-    <h2>{coffeeCounter}</h2>
+const TextBox = ({ colour, text }) => (
+  <div className="textBox" style={{ backgroundColor: colour }}>
+    <h2>{text}</h2>
   </div>
 );
 
-export default Status;
+export default TextBox;
