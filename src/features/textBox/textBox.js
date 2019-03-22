@@ -1,8 +1,8 @@
 import React from "react";
 
-const Status = () => (
+const Status = ({ coffeeCounter }) => (
   <div className="textBox">
-    <h3>Text box will go here</h3>
+    <h2>{coffeeCounter}</h2>
   </div>
 );
 

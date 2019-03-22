@@ -1,15 +1,15 @@
 import React from "react";
 import CoffeeButtonContainer from "./features/coffeeButton/CoffeeButtonContainer";
-import Status from "./features/status/Status";
-import TextBox from "./features/textBox/TextBox";
+import StatusContainer from "./features/status/StatusContainer";
+import TextBoxContainer from "./features/textBox/TextBoxContainer";
 import "./App.css";
 
 const App = () => (
   <div className="App">
     <header className="App-header">Settings will go here</header>
-    <TextBox />
+    <TextBoxContainer />
     <CoffeeButtonContainer />
-    <Status />
+    <StatusContainer />
   </div>
 );
 
