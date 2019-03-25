@@ -3,11 +3,10 @@
   transition: 0.35s ease-in-out;
 }
 
-.settings-image:hover {
+.settings-button:focus .settings-image {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 .settings-button {
   z-index: 1000;
   user-select: none;
