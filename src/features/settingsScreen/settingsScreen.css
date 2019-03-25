@@ -1,0 +1,32 @@
+.settingsContainer {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  -ms-flex-item-align: center;
+  align-self: center;
+
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+.settingsContainer.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.settingsContainer.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.settingsInner {
+  height: 100%;
+  width: 100%;
+  padding: 4rem;
+  margin: 2rem;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.25rem;
+
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
