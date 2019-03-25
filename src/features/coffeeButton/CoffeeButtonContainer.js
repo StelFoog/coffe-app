@@ -3,7 +3,8 @@ import { actions } from "./index";
 import CoffeeButton from "./CoffeeButton";
 
 const mapDispatchToProps = dispatch => ({
-  increaseCounter: () => dispatch(actions.increaseCounter())
+  increaseCounter: () => dispatch(actions.increaseCounter()),
+  timeout: () => dispatch(actions.timeout())
 });
 
 export default connect(
