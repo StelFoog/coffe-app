@@ -4,7 +4,7 @@
   height: 100%;
   -ms-flex-item-align: center;
   align-self: center;
-
+  z-index: 100;
   -webkit-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms;
 }
@@ -20,8 +20,8 @@
 .settingsInner {
   height: 100%;
   width: 100%;
+  margin: 4rem;
   padding: 4rem;
-  margin: 2rem;
   background: #fafafa;
   color: rgba(0, 0, 0, 0.87);
   border-radius: 0.25rem;
@@ -29,4 +29,10 @@
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 600px) {
+  .settingsInner {
+    padding: 2rem 1.25rem;
+  }
 }

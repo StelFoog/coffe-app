@@ -9,6 +9,7 @@
 }
 
 .settings-button {
+  z-index: 1000;
   user-select: none;
   background: none;
   border: none;
