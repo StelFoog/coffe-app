@@ -7,14 +7,14 @@ const initialState = {
   date: new Date(Date.now)
 };
 
-function sameDay(d1, d2) {
+const sameDay = (d1, d2) => {
   d1 = new Date(d1);
   return (
     d1.getFullYear() === d2.getFullYear() &&
     d1.getMonth() === d2.getMonth() &&
     d1.getDate() === d2.getDate()
   );
-}
+};
 
 const coffeeReducer = (state = initialState, action) => {
   const { type } = action;
