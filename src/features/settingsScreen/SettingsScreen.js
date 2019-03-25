@@ -3,8 +3,7 @@ import "./settingsScreen.css";
 
 class SettingsScreen extends React.Component {
   render() {
-    console.log(this);
-
+    console.log(this.props);
     return (
       <div
         className={
@@ -13,6 +12,10 @@ class SettingsScreen extends React.Component {
       >
         <div className="settingsInner">
           <h3>Settings will go here</h3>
+
+          <button className="resetButton" onClick={this.props.resetCounter}>
+            Reset counter
+          </button>
         </div>
       </div>
     );

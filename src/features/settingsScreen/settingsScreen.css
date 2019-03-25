@@ -1,6 +1,6 @@
 .settingsContainer {
   position: absolute;
-  width: 75%;
+  width: 50%;
   height: 100%;
   -ms-flex-item-align: center;
   align-self: center;
@@ -18,6 +18,8 @@
 }
 
 .settingsInner {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   margin: 4rem;
@@ -31,7 +33,23 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.resetButton {
+  margin-top: auto;
+  border: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  color: #ffffff;
+  background-color: #c0392b;
+  cursor: pointer;
+  outline: none;
+}
+
 @media (max-width: 600px) {
+  .settingsContainer {
+    width: 75%;
+  }
   .settingsInner {
     padding: 2rem 1.25rem;
   }
