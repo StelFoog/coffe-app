@@ -1,6 +1,6 @@
 .settingsContainer {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
   -ms-flex-item-align: center;
   align-self: center;
@@ -25,9 +25,8 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
-  margin: 4rem;
+  height: 30rem;
+  width: 50%;
   padding: 4rem;
   background: #fafafa;
   color: rgba(0, 0, 0, 0.87);
@@ -52,10 +51,8 @@
 }
 
 @media (max-width: 600px) {
-  .settingsContainer {
-    width: 75%;
-  }
   .settingsInner {
+    width: 75%;
     padding: 2rem 1.25rem;
   }
 }
